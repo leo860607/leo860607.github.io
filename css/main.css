@@ -989,7 +989,7 @@ pre .javascript .function {
   padding: 0 10px;
 }
 .headband {
-  background: #222;
+  background: #d3a4ff;
   height: 3px;
 }
 .site-meta {
@@ -1008,6 +1008,7 @@ pre .javascript .function {
   line-height: 1.375em;
   padding: 0 40px;
   position: relative;
+  background-color: D3A4FF;
 }
 .brand:hover {
   color: var(--brand-hover-color);
@@ -1196,7 +1197,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #34d4c2;
+  background: #fff988;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2257,7 +2258,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 .site-brand-container {
-  background: #222;
+  background: #d3a4ff;
 }
 @media (max-width: 991px) {
   .site-brand-container {
@@ -2266,7 +2267,6 @@ ul.breadcrumb li + li:last-child {
 }
 .site-meta {
   padding: 20px 0;
-  background-color: #D3A4FF;
 }
 .brand {
   padding: 0;
