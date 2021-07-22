@@ -216,7 +216,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://leo860607.github.io/2021/07/22/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://leo860607.github.io/2021/07/22/hexo%E6%95%99%E5%AD%B8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/shark.jpg">
@@ -230,7 +230,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/07/22/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2021/07/22/hexo%E6%95%99%E5%AD%B8/" class="post-title-link" itemprop="url">Hexo教學</a>
         </h2>
 
         <div class="post-meta">
@@ -239,8 +239,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-07-22 14:17:43" itemprop="dateCreated datePublished" datetime="2021-07-22T14:17:43+08:00">2021-07-22</time>
+              <time title="Created: 2021-07-22 14:17:43 / Modified: 16:33:40" itemprop="dateCreated datePublished" datetime="2021-07-22T14:17:43+08:00">2021-07-22</time>
             </span>
 
           
@@ -254,20 +255,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          <h4 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h4><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="建立blog專案"><a href="#建立blog專案" class="headerlink" title="建立blog專案"></a>建立blog專案</h4><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br><span class="line"><span class="built_in">cd</span> myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h4 id="啟動站台"><a href="#啟動站台" class="headerlink" title="啟動站台"></a>啟動站台</h4><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h4 id="新增文章"><a href="#新增文章" class="headerlink" title="新增文章"></a>新增文章</h4><p>快速產生一個 markdown 出來，產生的檔案放在 /source/post/ 下  </p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;example-post&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h4 id="轉成html"><a href="#轉成html" class="headerlink" title="轉成html"></a>轉成html</h4><p>將markdown轉成html，產生的檔案/public/下  </p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo getnerate</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
 
+<h4 id="協助部屬到git的套件"><a href="#協助部屬到git的套件" class="headerlink" title="協助部屬到git的套件"></a>協助部屬到git的套件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="建立github對應repo"><a href="#建立github對應repo" class="headerlink" title="建立github對應repo"></a>建立github對應repo</h4><p>GitHub 上新增一個 repo，名稱必須是 {username}.github.io  </p>
+<h4 id="設定-config-yml"><a href="#設定-config-yml" class="headerlink" title="設定 _config.yml"></a>設定 _config.yml</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://&lt;username&gt;:&lt;password&gt;@github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="部屬"><a href="#部屬" class="headerlink" title="部屬"></a>部屬</h4><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br><span class="line">hexo -g d </span><br><span class="line">hexo d -g</span><br><span class="line"></span><br><span class="line">#清快取</span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
       
     </div>
 
