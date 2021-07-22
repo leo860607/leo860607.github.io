@@ -2266,6 +2266,7 @@ ul.breadcrumb li + li:last-child {
 }
 .site-meta {
   padding: 20px 0;
+  background-color: #D3A4FF;
 }
 .brand {
   padding: 0;
