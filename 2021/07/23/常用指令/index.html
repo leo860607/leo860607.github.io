@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"leo860607.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#D3A4FF","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="maven打包 123456789mvn install -am -Dmaven.test.skip&#x3D;truemvn install -pl ms_cc -am -Dmaven.test.skip&#x3D;truemvn install -pl ms_tw -am -Dmaven.test.skip&#x3D;truemvn install -pl ms_fund -am -Dmaven.test.skip&#x3D;tru">
+  <meta name="description" content="maven打包-am 更新全部依賴-pl 選擇更新專案-Dmaven.test.skip&#x3D;true 略過單元測 12mvn install -am -Dmaven.test.skip&#x3D;truemvn install -pl &lt;project-name&gt; -am -Dmaven.test.skip&#x3D;true 清m2暫存12cd %userprofile%\.m2\repositoryfo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常用指令">
 <meta property="og:url" content="https://leo860607.github.io/2021/07/23/%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/index.html">
 <meta property="og:site_name" content="德古拉之都">
-<meta property="og:description" content="maven打包 123456789mvn install -am -Dmaven.test.skip&#x3D;truemvn install -pl ms_cc -am -Dmaven.test.skip&#x3D;truemvn install -pl ms_tw -am -Dmaven.test.skip&#x3D;truemvn install -pl ms_fund -am -Dmaven.test.skip&#x3D;tru">
+<meta property="og:description" content="maven打包-am 更新全部依賴-pl 選擇更新專案-Dmaven.test.skip&#x3D;true 略過單元測 12mvn install -am -Dmaven.test.skip&#x3D;truemvn install -pl &lt;project-name&gt; -am -Dmaven.test.skip&#x3D;true 清m2暫存12cd %userprofile%\.m2\repositoryfo">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-07-23T08:37:12.000Z">
-<meta property="article:modified_time" content="2021-07-23T08:37:47.667Z">
+<meta property="article:modified_time" content="2021-07-23T08:48:32.636Z">
 <meta property="article:author" content="Dracula Lin">
 <meta property="article:tag" content="work">
 <meta name="twitter:card" content="summary">
@@ -187,7 +187,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-07-23 16:37:12 / Modified: 16:37:47" itemprop="dateCreated datePublished" datetime="2021-07-23T16:37:12+08:00">2021-07-23</time>
+              <time title="Created: 2021-07-23 16:37:12 / Modified: 16:48:32" itemprop="dateCreated datePublished" datetime="2021-07-23T16:37:12+08:00">2021-07-23</time>
             </span>
 
           
@@ -215,14 +215,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h4><p>打包</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mvn install -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_cc -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_tw -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_fund -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_fx -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_ola -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_gold -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_eatm_qry -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_ps -am -Dmaven.test.skip=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>清m2暫存</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> %userprofile%\.m2\repository</span><br><span class="line"><span class="keyword">for</span> /r %i <span class="keyword">in</span> (*.lastUpdated) <span class="keyword">do</span> del %i</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>python打包成exe</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller -F .\hello.py -n 改名</span><br></pre></td></tr></table></figure>
-<p>打包成Jar</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">例如，要壓縮C:/<span class="built_in">test</span>目錄下的子目錄和jsp檔</span><br><span class="line">則先切換到jar檔所在的路徑，鍵入如下命令：</span><br><span class="line">c:</span><br><span class="line"><span class="built_in">cd</span> c:/<span class="built_in">test</span></span><br><span class="line">jar -c/vf test.war *</span><br><span class="line"></span><br><span class="line">pyinstaller -F .\YtDownloader_210317.py -n tmp</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <h3 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h3><h4 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h4><p>-am 更新全部依賴<br>-pl 選擇更新專案<br>-Dmaven.test.skip=true 略過單元測</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mvn install -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl &lt;project-name&gt; -am -Dmaven.test.skip=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h4 id="清m2暫存"><a href="#清m2暫存" class="headerlink" title="清m2暫存"></a>清m2暫存</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> %userprofile%\.m2\repository</span><br><span class="line"><span class="keyword">for</span> /r %i <span class="keyword">in</span> (*.lastUpdated) <span class="keyword">do</span> del %i</span><br></pre></td></tr></table></figure>
+
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><h4 id="python打包成exe"><a href="#python打包成exe" class="headerlink" title="python打包成exe"></a>python打包成exe</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller -F .\hello.py -n 改名</span><br><span class="line">pyinstaller -F .\YtDownloader_210317.py -n tmp</span><br></pre></td></tr></table></figure>
+<h3 id="java"><a href="#java" class="headerlink" title="java"></a>java</h3><h4 id="打包成Jar"><a href="#打包成Jar" class="headerlink" title="打包成Jar"></a>打包成Jar</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#例如，要壓縮C:/test目錄下的子目錄和jsp檔</span></span><br><span class="line"><span class="comment">#則先切換到jar檔所在的路徑，鍵入如下命令：</span></span><br><span class="line">c:</span><br><span class="line"><span class="built_in">cd</span> c:/<span class="built_in">test</span></span><br><span class="line">jar -c/vf test.war *</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -309,7 +307,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#maven"><span class="nav-number">1.</span> <span class="nav-text">maven</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#maven"><span class="nav-number">1.</span> <span class="nav-text">maven</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%93%E5%8C%85"><span class="nav-number">1.1.</span> <span class="nav-text">打包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B8%85m2%E6%9A%AB%E5%AD%98"><span class="nav-number">1.2.</span> <span class="nav-text">清m2暫存</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#python"><span class="nav-number">2.</span> <span class="nav-text">python</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#python%E6%89%93%E5%8C%85%E6%88%90exe"><span class="nav-number">2.1.</span> <span class="nav-text">python打包成exe</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java"><span class="nav-number">3.</span> <span class="nav-text">java</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%93%E5%8C%85%E6%88%90Jar"><span class="nav-number">3.1.</span> <span class="nav-text">打包成Jar</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
