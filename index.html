@@ -157,6 +157,85 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://leo860607.github.io/2021/07/23/%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/shark.jpg">
+      <meta itemprop="name" content="Dracula Lin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="德古拉之都">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/07/23/%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" class="post-title-link" itemprop="url">常用指令</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-07-23 16:37:12 / Modified: 16:37:47" itemprop="dateCreated datePublished" datetime="2021-07-23T16:37:12+08:00">2021-07-23</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2021/07/23/%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/07/23/常用指令/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h4><p>打包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mvn install -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_cc -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_tw -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_fund -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_fx -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_ola -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_gold -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_eatm_qry -am -Dmaven.test.skip=<span class="literal">true</span></span><br><span class="line">mvn install -pl ms_ps -am -Dmaven.test.skip=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>清m2暫存</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> %userprofile%\.m2\repository</span><br><span class="line"><span class="keyword">for</span> /r %i <span class="keyword">in</span> (*.lastUpdated) <span class="keyword">do</span> del %i</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>python打包成exe</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller -F .\hello.py -n 改名</span><br></pre></td></tr></table></figure>
+<p>打包成Jar</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">例如，要壓縮C:/<span class="built_in">test</span>目錄下的子目錄和jsp檔</span><br><span class="line">則先切換到jar檔所在的路徑，鍵入如下命令：</span><br><span class="line">c:</span><br><span class="line"><span class="built_in">cd</span> c:/<span class="built_in">test</span></span><br><span class="line">jar -c/vf test.war *</span><br><span class="line"></span><br><span class="line">pyinstaller -F .\YtDownloader_210317.py -n tmp</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://leo860607.github.io/2021/07/22/Django%E4%BB%8B%E7%B4%B9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -423,7 +502,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -436,7 +515,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
